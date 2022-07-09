@@ -627,9 +627,9 @@ namespace Oxide.Game.Rust
 
         #region Deprecated Hooks
         [HookMethod("OnInstrumentPlayNote")]
-        private object OnInstrumentPlayNote(InstrumentTool instrumentTool, int num, int num2, int num3, float num)
+        private object OnInstrumentPlayNote(InstrumentTool instrumentTool, int num, int num2, int num3, float num4)
         {
-            return Interface.Oxide.CallDeprecatedHook("OnInstrumentPlayNote", "OnInstrumentPlayNoteInstrumentTool instrumentTool, int num, int num2, int num3, float num)",
+            return Interface.Oxide.CallDeprecatedHook("OnInstrumentPlayNote", "OnInstrumentPlayNoteInstrumentTool instrumentTool, int num, int num2, int num3, float num4)",
                 new DateTime(2022, 12, 31), weapon, player);
         }
 
