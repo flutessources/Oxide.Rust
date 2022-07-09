@@ -630,13 +630,7 @@ namespace Oxide.Game.Rust
         private object OnInstrumentPlayNote(InstrumentTool instrumentTool, int num, int num2, int num3, float num4)
         {
             return Interface.Oxide.CallDeprecatedHook("OnInstrumentPlayNote", "OnInstrumentPlayNote(InstrumentTool instrumentTool, int num, int num2, int num3, float num4)",
-                new DateTime(2022, 12, 31), weapon, player);
-        }
-
-        private object OnAmmoSwitch(BaseProjectile weapon, BasePlayer player)
-        {
-            return Interface.Oxide.CallDeprecatedHook("OnSwitchAmmo", "OnAmmoSwitch(BaseProjectile weapon, BasePlayer player)",
-                new DateTime(2022, 12, 31), weapon, player);
+                new DateTime(2022, 12, 31), instrumentTool, num, num2, num3, num4);
         }
 
         [HookMethod("OnAmmoSwitch")]
