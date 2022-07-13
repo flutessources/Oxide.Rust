@@ -1,6 +1,6 @@
 {
   "Name": "Rust",
-  "TargetDirectory": "D:\\Servers\\Rust\\RustDedicated_Data\\Managed",
+  "TargetDirectory": "C:\\Users\\Flutes\\Documents\\RustSrc\\RustDedicated_Data\\Managed",
   "Manifests": [
     {
       "AssemblyName": "Assembly-CSharp.dll",
@@ -18321,35 +18321,6 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 2,
-            "ReturnBehavior": 0,
-            "ArgumentBehavior": 3,
-            "ArgumentString": "",
-            "HookTypeName": "Simple",
-            "Name": "OnWaterBallSplash",
-            "HookName": "OnWaterBallSplash",
-            "AssemblyName": "Assembly-CSharp.dll",
-            "TypeName": "WaterBall",
-            "Flagged": false,
-            "Signature": {
-              "Exposure": 2,
-              "Name": "DoSplash",
-              "ReturnType": "System.Boolean",
-              "Parameters": [
-                "UnityEngine.Vector3",
-                "System.Single",
-                "ItemDefinition",
-                "System.Int32"
-              ]
-            },
-            "MSILHash": "pH+R1C2MzJDYi+Tz+fIixlpk4N4HyYLUmuVbH8jZe8w=",
-            "BaseHookName": null,
-            "HookCategory": "Entity"
-          }
-        },
-        {
-          "Type": "Simple",
-          "Hook": {
             "InjectionIndex": 199,
             "ReturnBehavior": 0,
             "ArgumentBehavior": 1,
@@ -18910,7 +18881,7 @@
         {
           "Type": "Simple",
           "Hook": {
-            "InjectionIndex": 38,
+            "InjectionIndex": 62,
             "ReturnBehavior": 3,
             "ArgumentBehavior": 4,
             "ArgumentString": "l3, l4, this => l4",
@@ -18927,7 +18898,7 @@
               "Parameters": []
             },
             "MSILHash": "k041+UJqczO5cnzk8fFi3+vHh4AnJnHrFqETmaf3v+U=",
-            "BaseHookName": null,
+            "BaseHookName": "OnItemRecycle [2]",
             "HookCategory": "Item"
           }
         },
@@ -19304,6 +19275,32 @@
             "MSILHash": "/4NWOtHEnUP/VVzQ3FWBpYpPnCJDQd6TzKcm2j3trJM=",
             "BaseHookName": null,
             "HookCategory": "Item"
+          }
+        },
+        {
+          "Type": "Simple",
+          "Hook": {
+            "InjectionIndex": 16,
+            "ReturnBehavior": 4,
+            "ArgumentBehavior": 4,
+            "ArgumentString": "this",
+            "HookTypeName": "Simple",
+            "Name": "PlayNote",
+            "HookName": "OnPlayNote",
+            "AssemblyName": "Assembly-CSharp.dll",
+            "TypeName": "InstrumentTool",
+            "Flagged": false,
+            "Signature": {
+              "Exposure": 0,
+              "Name": "Server_PlayNote",
+              "ReturnType": "System.Void",
+              "Parameters": [
+                "BaseEntity/RPCMessage"
+              ]
+            },
+            "MSILHash": "MP3LuetELX/VrTPYe/qeHHmVKeyPwEqVsXf80ctpfU8=",
+            "BaseHookName": null,
+            "HookCategory": null
           }
         }
       ],
@@ -44926,6 +44923,25 @@
             ],
             "Name": "lastModelState",
             "FullTypeName": "System.Int32 BuildingBlock::lastModelState",
+            "Parameters": []
+          },
+          "MSILHash": ""
+        },
+        {
+          "Name": "InstrumentTool",
+          "AssemblyName": "Assembly-CSharp.dll",
+          "TypeName": "InstrumentTool",
+          "Type": 3,
+          "TargetExposure": [
+            2
+          ],
+          "Flagged": false,
+          "Signature": {
+            "Exposure": [
+              2
+            ],
+            "Name": "InstrumentTool",
+            "FullTypeName": "InstrumentTool",
             "Parameters": []
           },
           "MSILHash": ""
