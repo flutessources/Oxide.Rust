@@ -44926,25 +44926,6 @@
             "Parameters": []
           },
           "MSILHash": ""
-        },
-        {
-          "Name": "InstrumentTool",
-          "AssemblyName": "Assembly-CSharp.dll",
-          "TypeName": "InstrumentTool",
-          "Type": 3,
-          "TargetExposure": [
-            2
-          ],
-          "Flagged": false,
-          "Signature": {
-            "Exposure": [
-              2
-            ],
-            "Name": "InstrumentTool",
-            "FullTypeName": "InstrumentTool",
-            "Parameters": []
-          },
-          "MSILHash": ""
         }
       ],
       "Fields": [
